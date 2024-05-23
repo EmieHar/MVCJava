@@ -24,8 +24,8 @@ public class ActorController {
         actorDAO.deleteActor(id);
     }
 
-    public void updateActor(int id, String nom, String prenom, String photo){
-        actorDAO.updateActor(id, nom, prenom, photo);
+    public void updateActor(Actor actor){
+        actorDAO.updateActor(actor);
     }
 
     public void afficherActors(){

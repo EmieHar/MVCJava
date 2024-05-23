@@ -11,6 +11,7 @@ public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
+    @Column(name = "IdActeur")
     private int id;
     private String prenom;
     private String nom;
@@ -59,31 +60,5 @@ public class Actor {
 
     public void setPhoto(String photo) {
         this.photo = photo;
-    }
-
-    public static List<Actor> afficherActors() {
-        ActorDAO actorDAO = new ActorDAO();
-        return actorDAO.getActors();
-    }
-
-
-    public static Actor getActorById(int actorId){
-        ActorDAO actorDAO = new ActorDAO();
-        return actorDAO.getActorById(actorId);
-    }
-
-    public static void ajouterActor(Actor actor) {
-        ActorDAO actorDAO = new ActorDAO();
-        actorDAO.ajouterActor(actor);
-    }
-
-    public static void deleteActor(int actorId){
-        ActorDAO actorDAO = new ActorDAO();
-        actorDAO.deleteActor(actorId);
-    }
-
-    public static void updateActor(int actorId, String nom, String prenom, String photo){
-        ActorDAO actorDAO = new ActorDAO();
-        actorDAO.updateActor(actorId, nom, prenom, photo);
     }
 }

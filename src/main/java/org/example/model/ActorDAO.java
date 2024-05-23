@@ -294,7 +294,7 @@ public class ActorDAO {
 //
 //   }
 
-    public void modifierActor(Actor actor) {
+    public void updateActor(Actor actor) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             // Commencer une transaction

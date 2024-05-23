@@ -10,8 +10,8 @@ public class ActMVC {
 
 //        ac.ajouterActor(new Actor("Joli", "Angelina", "photo2.jpeg",4));
 //        ac.ajouterActor(new Actor("Pit", "Brad", "photo3.jpeg",5));
-        ac.ajouterActor(new Actor("Stewart", "Kristen", "photo4.jpeg",6));
-        ac.deleteActor(18);
+        //ac.ajouterActor(new Actor("Pattinson", "Robert", "photo.jpeg"));
+        //ac.deleteActor(18);
 
         ac.afficherActors();
 
