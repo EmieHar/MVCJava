@@ -1,14 +1,23 @@
 package org.example.model;
 
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name="acteur")
+
 public class Actor {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private int id;
     private String prenom;
     private String nom;
     private String photo;
 
+    public Actor() {
+    }
 
     public Actor(String name, String firstname, String photo) {
         this.nom = name;
@@ -54,7 +63,7 @@ public class Actor {
 
     public static List<Actor> afficherActors() {
         ActorDAO actorDAO = new ActorDAO();
-        return actorDAO.getActeurs();
+        return actorDAO.getActors();
     }
 
 

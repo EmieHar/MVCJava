@@ -29,7 +29,7 @@ public class ActorController {
     }
 
     public void afficherActors(){
-        List<Actor> actors = actorDAO.getActeurs();
+        List<Actor> actors = actorDAO.getActors();
         viewActor.afficheActors(actors);
     }
 

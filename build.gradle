@@ -10,7 +10,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'mysql:mysql-connector-java:8.0.28'
+    implementation 'org.hibernate:hibernate-core:5.6.9.Final'
+    implementation 'org.hibernate:hibernate-entitymanager:5.6.9.Final'
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation 'javax.persistence:javax.persistence-api:2.2'
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
