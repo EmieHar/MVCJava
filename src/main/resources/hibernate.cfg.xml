@@ -36,6 +36,10 @@
 
 		<!-- Enities to map -->
         <mapping class="org.example.model.Actor" />
+        <mapping class="org.example.model.Film" />
+        <mapping class="org.example.model.Genre" />
+        <mapping class="org.example.model.Real" />
+
 
     </session-factory>
 
